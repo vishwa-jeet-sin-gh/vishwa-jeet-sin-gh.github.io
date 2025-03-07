@@ -1,0 +1,387 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f8f8;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* Center align all sections */
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #33475b;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'Garamond', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p.tagline {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: whitesmoke; /* Change link color to whitesmoke */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    background: #455a64;
+}
+
+/* Sections Styles */
+section {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-me {
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/*Skills Section*/
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    padding: 10px 70px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+
+/* Services Section */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.service-box {
+    padding: 10px 45px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Technologies Used Section */
+.fea ul {
+    padding: 0;
+    text-align: center;
+}
+
+.fea li {
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Projects Section */
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align project content */
+    margin: 1rem 0;
+}
+
+.projects .project img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/* Contact Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align contact form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Georgia', serif;
+}
+
+contact-form button {
+    padding: 0.5rem;
+    background: #33475b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+contact-form button:hover {
+    background: #455a64;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #1f2933;
+}
+/* Footer Styles */
+footer {
+    background: #33475b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+/*animations*/
+.dm {
+    margin-left: 73%;
+    margin-top: 5%;
+    position: relative;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: -90px;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+.md {
+    position: relative;
+    right: 0;
+    bottom: 10%;
+    margin-bottom: -10%;
+    animation: move 3s infinite alternate;
+} 
+
+.jav {
+    margin-right: 73%;
+    margin-top: -28%;
+    position: relative;
+    animation: move 3s infinite alternate; 
+}
+.reac {
+    margin-right: 73%;
+    margin-top: -1%;
+    position: relative;
+    animation: move 1s infinite alternate; 
+}
+
+/*element*/
+#element {
+    background: #3c6894;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+/*link*/
+#projects a {
+    text-decoration: none;
+}
+
+#contact a {
+    text-decoration: none;
+}
+a {
+    color: #3498db; /* Choose a color that fits your portfolio */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3498db; /* Choose a color that fits your portfolio */
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+a:hover::after {
+    width: 100%;
+    /* Animate the underline */
+}
+ul {
+      list-style: none;
+    }
+    @media (max-width: 768px) {
+      li {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      li {
+        flex: 1 1 100%;
+      }
+    }
+    
+    .dm, .md, .jav, .reac {
+        margin: auto;
+        animation: move 1s infinite alternate;
+    }
+    
+    /* Animation definitions */
+    @keyframes move {
+        from {
+            left: -90px;
+        }
+        to {
+            left: 30px;
+        }
+    }
+    /*default styling*/
+    .dm {
+        margin-left: 73%;
+        margin-top: -1%;
+        position: relative;
+        animation: move 1s infinite alternate;
+    }
+    .md {
+        margin-left: 73%;
+        margin-top: -1%;
+        position: relative;
+        animation: move 3s infinite alternate;
+    }
+    .jav {
+        margin-right: 73%;
+        margin-top: -34%;
+        position: relative;
+        animation: move 3s infinite alternate; 
+    }
+    .reac {
+        margin-right: 73%;
+        margin-top: -1%;
+        position: relative;
+        animation: move 1s infinite alternate; 
+    }
+    
+    /* Mobile responsive styling */
+    @media only screen and (max-width: 600px) {
+        .dm, .md, .jav, .reac {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10%;
+            position: relative;
+        }
+    }
+
+    .project img {
+        width: 700px;
+      }
+    
+      /* Style for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .project img {
+          width: 100%;
+        }
+      }
+  
+
+    
+    
+    
