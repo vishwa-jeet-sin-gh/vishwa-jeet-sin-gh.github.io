@@ -129,10 +129,6 @@ section {
     align-items: center; /* Center align project content */
     margin: 1rem 0;
 }
-.project-gif {  
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 .projects .project img {
     width: 100px;
     height: 100px;
